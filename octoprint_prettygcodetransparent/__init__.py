@@ -31,7 +31,7 @@ class PrettyGCodePlugin(octoprint.plugin.StartupPlugin,
                 repo="OctoPrint-PrettyGCode",
                 current=self._plugin_version,
                 # update method: pip
-                pip="https://github.com/Kragrathea/OctoPrint-PrettyGCode/archive/{target_version}.zip"
+                pip="https://github.com/echo-lalia/OctoPrint-PrettyGCode-Redesign/archive/{target_version}.zip"
             )
         )
 # If you want your plugin to be registered within OctoPrint under a different name than what you defined in setup.py
