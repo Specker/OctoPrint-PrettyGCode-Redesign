@@ -31,7 +31,8 @@ class PrettyGCodePlugin(octoprint.plugin.StartupPlugin,
                 repo="OctoPrint-PrettyGCode",
                 current=self._plugin_version,
                 # update method: pip
-                pip="https://github.com/echo-lalia/OctoPrint-PrettyGCode-Redesign/archive/{target_version}.zip"
+                pip="https://github.com/echo-lalia/OctoPrint-PrettyGCode-Redesign/archive/master.zip"
+              
             )
         )
 # If you want your plugin to be registered within OctoPrint under a different name than what you defined in setup.py
@@ -40,12 +41,4 @@ class PrettyGCodePlugin(octoprint.plugin.StartupPlugin,
 __plugin_name__ = "PrettyGCode"
 __plugin_pythoncompat__ = ">=2.7,<4"
 
-def __plugin_load__():
-    global __plugin_implementation__ 
-    __plugin_implementation__ = PrettyGCodePlugin()
-
-    global __plugin_hooks__
-    __plugin_hooks__ = {
-        "octoprint.plugin.softwareupdate.check_config": __plugin_implementation__.get_update_information
-    }
 
