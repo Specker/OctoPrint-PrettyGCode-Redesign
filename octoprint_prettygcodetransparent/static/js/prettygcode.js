@@ -799,16 +799,16 @@ $(function () {
 
                 //Activate webcam view in window. 
                 $(".gwin #pg_webcam_image").attr("src", "/webcam/?action=stream&" + Math.random())
-                self.controlViewModel._enableWebcam();
+                // self.controlViewModel._enableWebcam();
 
             } else if (previous == "#tab_plugin_prettygcode") {
                 //todo. disable animation 
                 
                 //Disable camera when tab isnt visible.
                 $(".gwin #pg_webcam_image").attr("src", "")
-                self.controlViewModel._disableWebcam();
+                // self.controlViewModel._disableWebcam();
             }
-            self.controlViewModel._enableWebcam();
+            // self.controlViewModel._enableWebcam();
         };
 
         //util function
